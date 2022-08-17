@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Clipboard</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+
+    <div class="homeqr">
+
+        <button onclick="randomPath()">Click here to generate your OnlineClipBoard Room</button>
+
+    </div>
+
+    <script>
+        function randomPath(){
+            var x = (Math.random().toString(36)+'00000000000000000').slice(2, 16+2)
+            window.location.href = x;
+        }
+    </script>
+
+
+
+    </body>
+</html>
